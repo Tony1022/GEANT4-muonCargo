@@ -1,0 +1,30 @@
+# The script for visualization
+# Initialize the GEANT4
+/run/initialize
+
+# Initialize the graphical output
+/vis/open OGL 600x600-0+0
+
+# Set the position of viewing the detector
+/vis/viewer/set/viewpointVector 0 1 1
+
+# Allow refresh if something happens
+/vis/viewer/set/autoRefresh true
+
+# To draw our volume
+/vis/drawVolume
+
+# Show trajectory
+/vis/scene/add/trajectories smooth
+
+# If we shoot more than one particle, make sure we can see all of them
+/vis/scene/endOfEventAction accumulate
+
+# check how large our volume is
+/vis/scene/add/scale 10 cm
+
+# can see xyz coordinate axes
+/vis/scene/add/axes
+
+# show eventID
+/vis/scene/add/eventID
