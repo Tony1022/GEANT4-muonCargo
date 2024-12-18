@@ -2,8 +2,15 @@
 * This repository is used for uploading the GEANT4 code for the cargo detection project, HK cluster, 2024.
 * The code include:
 1. Define a 3D cartesian geometry
-2. 
+2. Rectangular plates aligned parallelly
+3. A muon gun to generate muon event(s) at a position
+4. Access physics parameters of simulated events and save as ROOT histograms and TTree object (=make NTuple files)
 
+# Latest update
+* 12/17/2024: Self-define gas done
+  - C2H2F4 94.7%
+  - C4H10 5%
+  - SF6 0.3%
 
 # GEANT 4 installation and tutorial
 * Pre-installation (Linux only):
@@ -12,7 +19,7 @@ sudo apt install cmake cmake-curses-gui gcc g++ libexpat1-dev libxmu-dev libmoti
 ```
 * Please reflect to the instruction in the german boi series https://www.youtube.com/watch?v=4DTumUo3IKw&t=2s
 
-# Simulation code in the project
+# Getting start
 * Download the code
 ```sh
 git clone https://github.com/Tony1022/GEANT4-muonCargo.git
