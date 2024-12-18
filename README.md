@@ -1,6 +1,6 @@
 # GEANT4-muonCargo
 * This repository is used for uploading the GEANT4 code for the cargo detection project, HK cluster, 2024.
-![G4 UI example](basic_layout.png)
+<img src="basic_layout.png" alt="G4 UI example" width="50%">
 
 * The code include:
 1. Define a 3D cartesian geometry
