@@ -1,5 +1,6 @@
 # GEANT4-muonCargo
 * This repository is used for uploading the GEANT4 code for the cargo detection project, HK cluster, 2024.
+![alt text](Screenshot 2024-12-17 173635.png)
 * The code include:
 1. Define a 3D cartesian geometry
 2. Rectangular plates aligned parallelly
@@ -37,6 +38,14 @@ make
 ./sim
 ```
 If your GEANT4 is installed properly, you will see a UI that have a cartesian coordinate system, a purple plate and parallel plates aligned parallelly in red and green.
+
+# Main scripts
+* TCDetectorConstruction.cc: Define detector geometry, materials and gas content
+* TCPrimaryGenerator.cc: Setup the particle gun, specify the particle that you want to shoot, its starting point, direction/momentum and initial total energy
+* TCRunAction.cc: Initialize the TTree variables and histograms that you want to put into your .root file, manage the open, write and close file
+* TCSensitiveDetector.cc: Access the physics variables from the steps of particle pass through the detector
+* TCActionInitialization.cc: Initialize the particle gun and ROOT file (and the TTree, histograms) manager
+* TCPhysicsList.cc: Initialize the physics that need to be included
 
 # Author list
 Tony Kwok Ching Cheung
