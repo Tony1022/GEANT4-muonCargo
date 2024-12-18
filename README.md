@@ -26,7 +26,7 @@ git clone https://github.com/Tony1022/GEANT4-muonCargo.git
 ```
 * CMake is required to compile the code
 ```sh
-cd <path/to/GEANT4-muonCargo>
+cd /path/to/GEANT4-muonCargo
 mkdir build
 cd build
 cmake ..
@@ -38,5 +38,5 @@ make
 ```
 If your GEANT4 is installed properly, you will see a UI that have a cartesian coordinate system, a purple plate and parallel plates aligned parallelly in red and green.
 
-# Author
+# Author list
 Tony Kwok Ching Cheung
