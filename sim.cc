@@ -8,9 +8,9 @@
 #include "G4UIExecutive.hh"
 
 // Self-defined simulation details
-#include "TCPhysicsList.hh"
-#include "TCDetectorConstruction.hh"
-#include "TCActionInitialization.hh"
+#include "PhysicsList.hh"
+#include "DetectorConstruction.hh"
+#include "ActionInitialization.hh"
 
 #include "G4VisAttributes.hh"
 #include "G4Color.hh"
@@ -29,13 +29,13 @@ int main(int argc, char** argv){
         #endif
 
         // Physics list
-        runManager->SetUserInitialization(new TCPhysicsList());
+        runManager->SetUserInitialization(new PhysicsList());
 
         // Detector construction
-        runManager->SetUserInitialization(new TCDetectorconstruction());
+        runManager->SetUserInitialization(new Detectorconstruction());
 
         // Action initialization
-        runManager->SetUserInitialization(new TCActionInitialization());
+        runManager->SetUserInitialization(new ActionInitialization());
 
         // start the UI only if the number of command line arguments is equal to one
         // Otherwise, no UI is showed, just run in the batch mode

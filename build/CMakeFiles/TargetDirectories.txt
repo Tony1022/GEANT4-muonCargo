@@ -1,0 +1,4 @@
+/home/tonyplus/cargoG4/build/CMakeFiles/sim.dir
+/home/tonyplus/cargoG4/build/CMakeFiles/Tutorial.dir
+/home/tonyplus/cargoG4/build/CMakeFiles/edit_cache.dir
+/home/tonyplus/cargoG4/build/CMakeFiles/rebuild_cache.dir
